@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Saya</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <style>
+        body {
+            scroll-behavior: smooth;
+        }
+
+        .hero {
+            background: linear-gradient(to right, #0d6efd, #6610f2);
+            color: white;
+            padding: 80px 0;
+        }
+        .bg-header {
+            background: linear-gradient(to right, #0d6efd, #6610f2);
+            color: white;
+        }
+
+        .section-title {
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+
+        .navbar {
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background: #f8f9fa;
+            padding: 20px 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            /* agar animasi scroll halus */
+        }
+
+        section {
+            scroll-margin-top: 100px;
+        }
+
+        .card-text {
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-header sticky-top">
+        <div class="container">
+            <a class="navbar-brand text-light" href="#">Rizky Kurniawan</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-light" href="#tentang">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="#portofolio">Portofolio</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="#kontak">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero text-center bg-light">
+        <div class="container">
+            <img src="assets/img/profil.jpg" alt="Foto Profil" class="rounded-circle shadow mb-3" width="150"
+                height="150">
+            <h2 class="display-4">Hii!!, Saya Rizky Kurniawan</h2>
+            <p class="lead">Mobile Developer | Web Developer | UI Designer | Game Developer</p>
+        </div>
+    </section>
+
+
+    <!-- Tentang Saya -->
+    <section id="tentang" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center">Tentang Saya</h2>
+            <p class="text-center">
+                Saya adalah mahasiswa semester 6 Program Studi Teknik Informatika di Universitas Budi Luhur, Fakultas
+                Teknologi Informasi. Saya memiliki ketertarikan yang kuat di bidang mobile apps development, front-end
+                development, dan game development. Dalam pengembangan aplikasi, saya telah berpengalaman menggunakan
+                Flutter dan Android Studio, sementara untuk pengembangan game, saya memanfaatkan Unity dan C#. Saya juga
+                tertarik pada desain antarmuka pengguna (UI/UX) menggunakan Figma, serta modeling 3D dasar dengan
+                Blender. Saya selalu antusias mengeksplorasi teknologi terbaru dan menciptakan solusi digital yang
+                menarik, interaktif, dan bermanfaat.
+            </p>
+        </div>
+    </section>
+
+
+
+    <!-- Portofolio -->
+    <section id="portofolio" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">Proyek Saya</h2>
+            <div class="row">
+                <!-- Proyek 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm">
+                        <img src="assets/img/projek1.png" class="card-img-top" alt="Proyek 1">
+                        <div class="card-body">
+                            <h5 class="card-title">2D Space Shooter Game
+                            </h5>
+                            <p class="card-text">Tugas UAS mata kuliah Pemrograman Permainan semester 5,
+                                dibuat dengan
+                                Unity. Game ini mengusung konsep tembak-menembak luar angkasa 2D bertema retro.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyek 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm">
+                        <img src="assets/img/projek2.png" class="card-img-top" alt="Proyek 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Voxel Character</h5>
+                            <p class="card-text">Tugas UAS mata kuliah 3D Character Design semester 5. Karakter dibuat
+                                dengan teknik voxel art menggunakan MagicaVoxel, berfokus pada desain karakter bergaya
+                                blok-blok 3D.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyek 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm">
+                        <img src="https://placehold.co/600x400" class="card-img-top" alt="Proyek 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Proyek 3</h5>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak -->
+    <!-- Kontak Horizontal -->
+    <section id="kontak" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-4">Kontak</h2>
+            <div class="d-flex flex-wrap justify-content-center gap-4 text-center">
+
+                <!-- Email -->
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rizkykurniawan4444@gmail.com" target="_blank"
+                    class="text-dark text-decoration-none d-flex align-items-center gap-2">
+                    <i class="bi bi-envelope-fill fs-3"></i>
+                    <span>Email</span>
+                </a>
+
+
+                <!-- Instagram -->
+                <a href="https://instagram.com/ikibaik_" target="_blank"
+                    class="text-dark text-decoration-none d-flex align-items-center gap-2">
+                    <i class="bi bi-instagram fs-3"></i>
+                    <span>Instagram</span>
+                </a>
+
+                <!-- GitHub -->
+                <a href="https://github.com/StempelWaktu" target="_blank"
+                    class="text-dark text-decoration-none d-flex align-items-center gap-2">
+                    <i class="bi bi-github fs-3"></i>
+                    <span>GitHub</span>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://linkedin.com/in/rizky-kurniawan-489b59330" target="_blank"
+                    class="text-dark text-decoration-none d-flex align-items-center gap-2">
+                    <i class="bi bi-linkedin fs-3"></i>
+                    <span>LinkedIn</span>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <p>&copy; 2025 Rizky Kurniawan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
