@@ -1,13 +1,18 @@
 function createCarousel(carouselId, images) {
     const carousel = document.getElementById(carouselId);
 
-    let indicators = "";
+    if (!carousel) {
+        console.error("Carousel tidak ditemukan:", carouselId);
+        return;
+    }
+
     let items = "";
+    let indicators = "";
 
     images.forEach((image, index) => {
 
         items += `
-            <div class="carousel-item ${index === 0 ? 'active' : ''}">
+            <div class="carousel-item ${index === 0 ? "active" : ""}">
                 <img src="${image.src}"
                      class="d-block w-100"
                      alt="${image.alt}">
@@ -18,8 +23,8 @@ function createCarousel(carouselId, images) {
             <button type="button"
                     data-bs-target="#${carouselId}"
                     data-bs-slide-to="${index}"
-                    class="${index === 0 ? 'active' : ''}"
-                    ${index === 0 ? 'aria-current="true"' : ''}
+                    class="${index === 0 ? "active" : ""}"
+                    ${index === 0 ? 'aria-current="true"' : ""}
                     aria-label="Slide ${index + 1}">
             </button>
         `;
