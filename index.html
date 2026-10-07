@@ -225,7 +225,10 @@
                 <!-- Proyek 4 -->
                 <div class="col-md-4 mb-4">
                     <div class="card shadow-sm">
-                        <div id="carouselProyek4" class="carousel slide" data-bs-ride="carousel">
+                        <div id="carouselProyek4" class="carousel slide"></div>
+
+
+                        <!-- <div id="carouselProyek4" class="carousel slide" data-bs-ride="carousel">
 
                             <div class="carousel-inner">
 
@@ -252,25 +255,25 @@
                                 <button type="button"
                                         data-bs-target="#carouselProyek4"
                                         data-bs-slide-to="1"></button>
-                            </div>
+                            </div> -->
 
                             <!-- Tombol sebelumnya -->
-                            <button class="carousel-control-prev" type="button"
+                            <!-- <button class="carousel-control-prev" type="button"
                                     data-bs-target="#carouselProyek4"
                                     data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon"></span>
                                 <span class="visually-hidden">Previous</span>
-                            </button>
+                            </button> -->
 
                             <!-- Tombol berikutnya -->
-                            <button class="carousel-control-next" type="button"
+                            <!-- <button class="carousel-control-next" type="button"
                                     data-bs-target="#carouselProyek4"
                                     data-bs-slide="next">
                                 <span class="carousel-control-next-icon"></span>
                                 <span class="visually-hidden">Next</span>
                             </button>
 
-                        </div>
+                        </div> -->
                         <div class="card-body">
                             <h5 class="card-title">PISN 2026 Budiluhur - Pengembangan Sistem Mural Interaktif Berbasis Augmented Reality</h5>
                             <p class="card-text">
@@ -378,6 +381,19 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="carousel.js"></script>
+    <script>
+    createCarousel("carouselProyek3", [
+        {
+            src: "assets/img/P3MariMemilahSampah.png",
+            alt: "AR Mari Memilah Sampah"
+        },
+        {
+            src: "assets/img/P3MariMemilahSampah2.png",
+            alt: "AR Mari Memilah Sampah 2"
+        }
+    ]);
+    </script>
 </body>
 
 </html>
