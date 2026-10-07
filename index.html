@@ -202,14 +202,14 @@
                                 Aplikasi ini mengusung konsep edukasi interaktif tentang pemilahan sampah berdasarkan jenisnya,
                                 seperti organik, anorganik, B3, dan residu.
                                 
-                                <span id="moreText" style="display: none;">
+                                <span id="moreTextP3" style="display: none;">
                                     Konsep aplikasi ini terinspirasi dari aplikasi kolaborasi Choki Choki dengan BoBoiBoy,
                                     khususnya dalam penggunaan kartu sebagai media interaktif berbasis AR.
                                     Kegiatan ini dilaksanakan di PAUD Ananda sebagai media pembelajaran yang menarik dan
                                     interaktif untuk mengenalkan jenis serta pemilahan sampah kepada anak-anak.
                                 </span>
-                                <span id="toggleText"
-                                    onclick="toggleText()"
+                                <span id="toggleTextP3"
+                                    onclick="toggleText(document.getElementById('moreTextP3'), this)"
                                     style="font-weight: bold; color: #0d6efd; cursor: pointer; text-decoration: underline;">
                                     Tampilkan selengkapnya
                                 </span>
@@ -233,15 +233,15 @@
                                 dibuat dengan Hovarlay dan teknologi Augmented Reality (AR). Proyek ini mengusung konsep mural interaktif yang menggabungkan karya seni dengan teknologi AR sebagai media 
                                 edukasi budaya dan komunikasi visual.
                                 
-                                <span id="moreText" style="display: none;">
+                                <span id="moreTextP4" style="display: none;">
                                     Mural yang telah dibuat dapat dikembangkan menjadi pengalaman interaktif 
                                     melalui perangkat digital, sekaligus menjadi sarana untuk memperkenalkan budaya dan menghidupkan 
                                     ruang publik. Dalam proyek ini, saya berperan dalam pengembangan sistem berbasis AR untuk 
                                     menghubungkan karya mural dengan konten interaktif digital, serta membantu dosen dan tim dari 
                                     Fakultas Teknologi Informasi dalam menjelaskan cara penggunaan aplikasi kepada pengguna.
                                 </span>
-                                <span id="toggleText"
-                                    onclick="toggleText()"
+                                <span id="toggleTextP4"
+                                    onclick="toggleText(document.getElementById('moreTextP4'), this )"
                                     style="font-weight: bold; color: #0d6efd; cursor: pointer; text-decoration: underline;">
                                     Tampilkan selengkapnya
                                 </span>
@@ -321,9 +321,7 @@
 </html>
 
 <script>
-    function toggleText() {
-        const moreText = document.getElementById("moreText");
-        const button = document.getElementById("toggleText");
+    function toggleText(moreText, button) {
 
         if (moreText.style.display === "none") {
             moreText.style.display = "inline";
