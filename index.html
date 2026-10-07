@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
+    <script src="js/carousel.js"></script>
     <style>
         body {
             scroll-behavior: smooth;
@@ -226,50 +226,19 @@
                 <div class="col-md-4 mb-4">
                     <div class="card shadow-sm">
                         <div id="carouselProyek4" class="carousel slide" data-bs-ride="carousel">
-
-                            <div class="carousel-inner">
-
-                                <div class="carousel-item active">
-                                    <img src="assets/img/P4MuralAR.png"
-                                        class="d-block w-100"
-                                        alt="AR Mari Memilah Sampah">
-                                </div>
-
-                                <div class="carousel-item">
-                                    <img src="assets/img/P4MuralAR2.png"
-                                        class="d-block w-100"
-                                        alt="AR Mari Memilah Sampah 2">
-                                </div>
-
-                            </div>
-                            <div class="carousel-indicators">
-                                <button type="button"
-                                        data-bs-target="#carouselProyek4"
-                                        data-bs-slide-to="0"
-                                        class="active"
-                                        aria-current="true"></button>
-
-                                <button type="button"
-                                        data-bs-target="#carouselProyek4"
-                                        data-bs-slide-to="1"></button>
-                            </div>
-
-                            <!-- Tombol sebelumnya -->
-                            <button class="carousel-control-prev" type="button"
-                                    data-bs-target="#carouselProyek4"
-                                    data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-
-                            <!-- Tombol berikutnya -->
-                            <button class="carousel-control-next" type="button"
-                                    data-bs-target="#carouselProyek4"
-                                    data-bs-slide="next">
-                                <span class="carousel-control-next-icon"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-
+                            <script>
+                                createCarousel("carouselProyek4", [
+                                    {
+                                        src: "assets/img/P4MuralAR.png",
+                                        alt: "AR Mural"
+                                    },
+                                    {
+                                        src: "assets/img/P4MuralAR2.png",
+                                        alt: "AR Mural 2"
+                                    }
+                                ]);
+                            </script>
+                            <div id="carouselProyek4" class="carousel slide"></div>
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">PISN 2026 Budiluhur - Pengembangan Sistem Mural Interaktif Berbasis Augmented Reality</h5>
